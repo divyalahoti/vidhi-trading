@@ -5,7 +5,7 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
 
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
+
 import ProductList from './pages/ProductList';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
@@ -24,6 +24,9 @@ import ManageOrders from './admin/ManageOrders';
 import ManageCustomers from './admin/ManageCustomers';
 
 import OrderTracking from './pages/OrderTracking';
+import Home from './pages/Home/Home.jsx';
+import Footer from './pages/Footer/Footer.jsx';
+
 
 const ProtectedRoute = ({ children, adminOnly }) => {
   const { user, loading } = useAuth();
@@ -107,6 +110,7 @@ function App() {
             {/* Fallback */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
+          <Footer />
         </Router>
       </CartProvider>
     </AuthProvider>

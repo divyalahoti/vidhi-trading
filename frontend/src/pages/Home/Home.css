@@ -1,0 +1,408 @@
+/* =========================
+     GLOBAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-page {
+  background: #f8f9fc;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =========================
+     HERO SECTION
+========================= */
+
+.hero-section {
+  background: linear-gradient(135deg, #ff7b00, #ff5e00);
+  padding: 100px 0;
+  color: white;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.18);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.hero-left h1 {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.hero-left p {
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: 0.95;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: white;
+  color: #ff5e00;
+  padding: 14px 35px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  border: 2px solid white;
+  color: white;
+  padding: 14px 35px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.hero-right {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 25px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+     FEATURES
+========================= */
+
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  position: relative;
+}
+
+.feature-card {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  background: white;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.feature-card p {
+  color: #777;
+  line-height: 1.6;
+}
+
+/* =========================
+     LOGIN BANNER
+========================= */
+
+.login-banner {
+  background: #1f2937;
+  color: white;
+  margin-top: 60px;
+  padding: 20px 0;
+}
+
+.login-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.banner-btn {
+  background: #ff5e00;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.banner-btn.secondary {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+/* =========================
+     SECTION HEADER
+========================= */
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  color: #222;
+}
+
+.view-all {
+  color: #ff5e00;
+  font-weight: 600;
+}
+
+/* =========================
+     BRANDS
+========================= */
+
+.brands-section {
+  margin-top: 70px;
+}
+
+.brands-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.brand-card {
+  background: white;
+  border: 1px solid #e5e5e5;
+  padding: 14px 24px;
+  border-radius: 12px;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.brand-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+.brand-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* =========================
+     PRODUCTS
+========================= */
+
+.products-section {
+  margin-top: 80px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px;
+  color: #777;
+}
+
+/* =========================
+     STATS
+========================= */
+
+.stats-section {
+  background: white;
+  margin-top: 90px;
+  padding: 80px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.stat-card {
+  text-align: center;
+}
+
+.stat-card h2 {
+  color: #ff5e00;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: #666;
+  font-size: 18px;
+}
+
+/* =========================
+     TESTIMONIALS
+========================= */
+
+.testimonials-section {
+  padding: 90px 0;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-card p {
+  margin: 20px 0;
+  color: #666;
+  line-height: 1.8;
+}
+
+.testimonial-card h4 {
+  color: #ff5e00;
+}
+
+/* =========================
+     CTA
+========================= */
+
+.cta-section {
+  background: linear-gradient(135deg, #ff7b00, #ff5e00);
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.cta-section h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+/* =========================
+     RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .features-section,
+  .stats-grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-left h1 {
+    font-size: 38px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .login-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .features-section,
+  .stats-grid,
+  .testimonials-grid,
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cta-section h2 {
+    font-size: 30px;
+  }
+
+  .hero-right img {
+    max-width: 100%;
+  }
+}
